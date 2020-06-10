@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Math</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i,900,900i">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+	<div id="content">
+		<h1>Math</h1>
+		<!-- Button trigger modal -->
+		<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#instruction" id="instructionBtn">
+		 Instructions
+		</button>
+
+		<!-- Modal -->
+		<div class="modal fade" id="instruction" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Instructions</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+					</div>
+					<div class="modal-body">
+						<p>Use one of the operations below followed by an expression and click enter to get the answer. <br> Ex. "simplify 12x+27+24x+45" or <br> "factor x^2+2x+1"</p>
+						<h4>Operations: </h4>
+						<ul>
+							<li>simplify</li>
+							<li>factor</li>
+							<li>derive</li>
+							<li>integrate</li>
+							<li>zeroes</li>
+							<li>tangent</li>
+							<li>area</li>
+							<li>cos</li>
+							<li>sin</li>
+							<li>tan</li>
+							<li>arccos</li>
+							<li>arcsin</li>
+							<li>arctan</li>
+							<li>abs</li>
+							<li>log</li>
+						</ul>
+						<small>Default operation is simplify.</small>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="calculator">
+			<div id="row1" class="rows"><div id="input1" class="input"></div><div id="output1" class="output"></div></div>
+			<div id="row2" class="rows"><div id="input2" class="input"></div><div id="output2" class="output"></div></div>
+			<div id="row3" class="rows"><div id="input3" class="input"></div><div id="output3" class="output"></div></div>
+			<div id="row4" class="rows"><div id="input4" class="input"></div><div id="output4" class="output"></div></div>
+			<div id="row5" class="rows"><div id="input5" class="input"></div><div id="output5" class="output"></div></div>
+			<div id="row6" class="rows"><div id="input6" class="input"></div><div id="output6" class="output"></div></div>
+			<div id="row7" class="rows"><div id="input7" class="input"></div><div id="output7" class="output"></div></div>
+			<div id="textbox" contenteditable="true"></div>
+		</div>
+		<button id="reset" class="btn btn-primary">Clear</button>
+	</div>
+	
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
+
+
